@@ -13,23 +13,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/758ed9b136.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <!-- BASIC STYLING -->
-  <style>
-    h1 {
-      font-family: 'Roboto', sans-serif;
-    }
-    h2 {
-      font-family: 'Oswald', sans-serif;
-    }
-  </style>
 
   <!-- BODY is where we code and what we see in browser -->
   <body>
-       <!-- HEADER & NABVAR -->
+    <!-- HEADER & NABVAR -->
     <header>
       <div class="container header-container">
         <a href="/" class="logo">LearnToCode</a>
@@ -41,35 +39,37 @@
             <li>
               <a href="#steps">Steps</a>
             </li>
-            <li><a href="#resources">Resources</a></li>
+            <li>
+              <a href="#resources">Resources</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
-<!-- MAIN  -->
+    <!-- MAIN  -->
     <main>
       <!-- Section HERO -->
       <section class="hero" id="hero">
         <div class="container">
           <h1>Build Your First Landing Page</h1>
-          <img src="guy.jpg" width="400" alt="coding girl" />
           <p>
             Learn how to create beautiful, responsive and nice landing pages
             with HTML and CSS - no prior experience needed!
           </p>
           <div class="hero-buttons">
-            <a href="#steps" class="btn">Start Learning</a>
+            <a href="#steps" class="btn">Let's Learn</a>
             <a href="#resources" class="btn btn-secondary">Resources</a>
           </div>
         </div>
       </section>
 
       <!-- Section BENEFITS -->
-      <section class="section" id="benefits">
+      <section class="section container flex" id="benefits">
+        <img src="coding5.jpg" alt="A girl"  />
         <!-- Container for the section -->
-        <div class="container">
+        <div class="container benefits">
           <h2>Why Create Your Own Landing Page?</h2>
-        <!-- Container for cards -->
+          <!-- Container for cards -->
           <div class="benefits-container">
             <!-- CARD 1 -->
             <div class="benefit-card">
@@ -80,7 +80,7 @@
                 your web development journey.
               </p>
             </div>
-           <!-- CARD 2 -->
+            <!-- CARD 2 -->
             <div class="benefit-card">
               <div class="benefit-icon">💼</div>
               <h3>Enhance Your Portfolio</h3>
@@ -89,7 +89,7 @@
                 potential employers or clients.
               </p>
             </div>
-          <!-- CARD 3 -->
+            <!-- CARD 3 -->
             <div class="benefit-card">
               <div class="benefit-icon">🎨</div>
               <h3>Express Creativity</h3>
@@ -102,103 +102,154 @@
         </div>
       </section>
 
-       <!-- Section STEPS -->
-          <section id="steps" class="section">
+      <!-- Section STEPS -->
+      <section id="steps" class="section">
         <div class="container">
-            <h2>How to Build Your Landing Page: Step by Step</h2>
-            <!-- items -->
-            <div class="steps">
-              <!-- item -->
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Plan Your Page Structure</h3>
-                        <p>Before writing any code, sketch your page layout on paper or using a wireframing tool. Identify the main sections you'll need: header, hero section, features, call-to-action, etc.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Set Up Your HTML Structure</h3>
-                        <p>Create a new HTML file and set up the basic structure with doctype, html, head, and body tags. Define your meta tags for proper character encoding and responsive behavior.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Create Your CSS File</h3>
-                        <p>Start with a CSS reset to normalize browser differences. Define your global styles, including typography, colors, and spacing.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Build Your Navigation Menu</h3>
-                        <p>Create a responsive navigation menu that collapses into a hamburger menu on mobile devices. Implement smooth scrolling to page sections using anchor links and IDs.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">5</div>
-                    <div class="step-content">
-                        <h3>Optimize for Mobile</h3>
-                        <p>Use media queries to ensure your page looks great on all screen sizes. Test on different devices and browsers to catch any responsive design issues.</p>
-                    </div>
-                </div>
+          <h2>How to Build Your Landing Page: Step by Step</h2>
+          <!-- items -->
+          <div class="steps">
+            <!-- item -->
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Plan Your Page Structure</h3>
+                <p>
+                  Before writing any code, sketch your page layout on paper or
+                  using a wireframing tool. Identify the main sections you'll
+                  need: header, hero section, features, call-to-action, etc.
+                </p>
+              </div>
             </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Set Up Your HTML Structure</h3>
+                <p>
+                  Create a new HTML file and set up the basic structure with
+                  doctype, html, head, and body tags. Define your meta tags for
+                  proper character encoding and responsive behavior.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Create Your CSS File</h3>
+                <p>
+                  Start with a CSS reset to normalize browser differences.
+                  Define your global styles, including typography, colors, and
+                  spacing.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Build Your Navigation Menu</h3>
+                <p>
+                  Create a responsive navigation menu that collapses into a
+                  hamburger menu on mobile devices. Implement smooth scrolling
+                  to page sections using anchor links and IDs.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h3>Optimize for Mobile</h3>
+                <p>
+                  Use media queries to ensure your page looks great on all
+                  screen sizes. Test on different devices and browsers to catch
+                  any responsive design issues.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
       </section>
+
       <!-- Section Resources -->
-        <section id="resources" class="section">
+      <section id="resources" class="section">
         <div class="container">
-            <h2>Helpful Resources</h2>
-            <!-- Cards container -->
-            <div class="resources-container">
-              <!-- CARD 1 -->
-                <div class="resource-card">
-                    <div class="resource-icon">📚</div>
-                    <div>
-                        <h3>MDN Web Docs</h3>
-                        <p>Comprehensive documentation for HTML, CSS, and JavaScript with tutorials and guides for beginners.</p>
-                        <a href="https://developer.mozilla.org" target="_blank" class="btn">Explore</a>
-                    </div>
-                </div>
-                <!-- CARD 2 -->
-                <div class="resource-card">
-                    <div class="resource-icon">💻</div>
-                    <div>
-                        <h3>W3Schools</h3>
-                        <p>Interactive tutorials and references with examples for web development beginners.</p>
-                        <a href="https://www.w3schools.com" target="_blank" class="btn">Learn</a>
-                    </div>
-                </div>
-                <!-- CARD 3 -->
-                <div class="resource-card">
-                    <div class="resource-icon">🎮</div>
-                    <div>
-                        <h3>CSS Tricks</h3>
-                        <p>Articles, tutorials, and guides focused on CSS techniques and best practices.</p>
-                        <a href="https://css-tricks.com" target="_blank" class="btn">Discover</a>
-                    </div>
-                </div>
-                <!-- CARD 4 -->
-                <div class="resource-card">
-                    <div class="resource-icon">🎨</div>
-                    <div>
-                        <h3>Coolors</h3>
-                        <p>Color scheme generator to help you create beautiful color palettes for your landing page.</p>
-                        <a href="https://coolors.co" target="_blank" class="btn">Generate</a>
-                    </div>
-                </div>
+          <h2>Helpful Resources</h2>
+          <!-- Cards container -->
+          <div class="resources-container">
+            <!-- CARD 1 -->
+            <div class="resource-card">
+              <div class="resource-icon"><i class="fa-solid fa-book"></i></div>
+              <div>
+                <h3>MDN Web Docs</h3>
+                <p>
+                  Comprehensive documentation for HTML, CSS, and JavaScript with
+                  tutorials and guides for beginners.
+                </p>
+                <a
+                  href="https://developer.mozilla.org"
+                  target="_blank"
+                  class="btn"
+                  >Explore</a
+                >
+              </div>
             </div>
+            <!-- CARD 2 -->
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa-solid fa-computer"></i>
+              </div>
+              <div>
+                <h3>W3Schools</h3>
+                <p>
+                  Interactive tutorials and references with examples for web
+                  development beginners.
+                </p>
+                <a href="https://www.w3schools.com" target="_blank" class="btn"
+                  >Learn</a
+                >
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa-solid fa-computer-mouse"></i>
+              </div>
+              <div>
+                <h3>CSS Tricks</h3>
+                <p>
+                  Articles, tutorials, and guides focused on CSS techniques and
+                  best practices.
+                </p>
+                <a href="https://css-tricks.com" target="_blank" class="btn"
+                  >Discover</a
+                >
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <div>
+                <h3>Coolors</h3>
+                <p>
+                  Color scheme generator to help you create beautiful color
+                  palettes for your landing page.
+                </p>
+                <a href="https://coolors.co" target="_blank" class="btn"
+                  >Generate</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     </main>
     <!-- FOOTER -->
     <footer>
       This project was coded by
       <strong>Olga D.Kahraman</strong> and
-      <a href="https://github.com/olgakahraman/intro_lern-to-code" target="_blank"
+      <a
+        href="https://github.com/olgakahraman/intro_lern-to-code"
+        target="_blank"
         >open-sourced on GitHub</a
       >
     </footer>

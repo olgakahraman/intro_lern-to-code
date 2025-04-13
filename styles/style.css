@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  color: 333;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #a92606;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 80px 0;
+}
+header {
+  background: #eea517;
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.header-container {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+header a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 5px 10px;
+  transition: all 150ms ease-in-out;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+header a:hover {
+  cursor: pointer;
+  color: orangered;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url('../coding7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 300px 0 350px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px 15px;
+  border-radius: 7px;
+  transition: all 200ms ease-in-out;
+  margin: 10px;
+  color: #a92606;
+  font-size: 18px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #a92606;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  background: #a92606;
+  color: white;
+}
+
+#steps {
+  background: #a92606;
+  color: #ffc653;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  gap: 20px;
+}
+.benefits {
+  padding: 60px;
+}
+.flex img {
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+#resources {
+  background: #840546;
+}
