@@ -23,6 +23,11 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
 p {
   margin-bottom: 15px;
   font-family: 'Montserrat', sans-serif;
@@ -37,7 +42,7 @@ p {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 80px 15px;
 }
 header {
   background: #eea517;
@@ -116,11 +121,6 @@ header a:hover {
   color: white;
 }
 
-#steps {
-  background: #a92606;
-  color: #ffc653;
-}
-
 .flex {
   display: flex;
   justify-content: space-between;
@@ -138,6 +138,129 @@ header a:hover {
   border-radius: 30px;
 }
 
+#steps {
+  background: #a92606;
+  color: #ffc653;
+  padding-top: 100px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: rgba(255, 198, 83, 0.1);
+  padding: 25px;
+  border-radius: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 198, 83, 0.2);
+}
+
+.step-number {
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffc653;
+  color: #a92606;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  align-self: center;
+}
+
 #resources {
-  background: #840546;
+  background: olive;
+}
+.resources-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+.resource-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+}
+
+.resource-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resource-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #a92606;
+}
+
+.resource-card .btn {
+  background: #a92606;
+  color: white;
+  width: fit-content;
+}
+.resource-card .btn:hover {
+  background: none;
+  color: #a92606;
+  border: 1px solid #a92606;
+}
+.resource-card p {
+  margin: 0;
+  height: 180px;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.social-links a:hover {
+  color: #eea517;
+  transform: translateY(-3px);
+}
+
+.copyright {
+  font-size: 14px;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+.repo a {
+  color: #eea517;
+  text-decoration: none;
+}
+
+.repo a:hover {
+  text-decoration: underline;
 }
