@@ -7,11 +7,12 @@
 body {
   line-height: 1.6;
   color: 333;
+  background: #333;
 }
 
 h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
   color: #a92606;
   font-family: 'Roboto Mono', monospace;
 }
@@ -38,7 +39,6 @@ p {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .section {
@@ -85,6 +85,15 @@ header a:hover {
   cursor: pointer;
   color: orangered;
 }
+header a i {
+  margin-top: 7px;
+}
+
+.nav-icon {
+  display: none;
+  font-size: 20px;
+  color: tomato;
+}
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
@@ -121,6 +130,10 @@ header a:hover {
   color: white;
 }
 
+#benefits {
+  background: white;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -128,8 +141,12 @@ header a:hover {
   align-items: center;
   gap: 20px;
 }
-.benefits {
+
+.benefits-container {
   padding: 60px;
+}
+.benefit-icon {
+  font-size: 30px;
 }
 .flex img {
   max-width: 500px;
@@ -263,4 +280,29 @@ header a:hover {
 
 .repo a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .nav-text {
+    display: none;
+  }
+  .nav-icon {
+    display: block;
+  }
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .flex img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: all 200ms ease-in-out;
+  }
+  .benefits-container {
+    padding: 0;
+    text-align: center;
+  }
+  header {
+    background: linear-gradient(to right, orange, yellow);
+  }
 }
