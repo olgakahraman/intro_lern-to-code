@@ -85,7 +85,7 @@ header a:hover {
   cursor: pointer;
   color: orangered;
 }
-header a i {
+header i {
   margin-top: 7px;
 }
 
@@ -93,6 +93,57 @@ header a i {
   display: none;
   font-size: 20px;
   color: tomato;
+}
+.theme-toggle-item .nav-text {
+  margin-top: 3px;
+}
+
+.theme-toggle-item button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 10px;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  
+}
+
+.theme-toggle-item button:hover{
+  color:orangered;
+}
+
+.dark-theme header{
+  background: indigo;
+}
+
+.dark-theme #hero{
+  background: blueviolet;
+}
+
+.dark-theme #hero h1{
+  color:#eea517
+}
+.dark-theme #hero .btn{
+  color:#eea517;
+  background: #a92606;
+}
+
+.dark-theme #benefits{
+  background: #333;
+  color:azure;
+}
+
+.dark-theme #steps{
+  background: blueviolet;
+}
+
+.dark-theme .resource-card{
+  background:#333 ;
+  color:white;
 }
 
 .hero {
@@ -304,5 +355,9 @@ header a i {
   }
   header {
     background: linear-gradient(to right, orange, yellow);
+  }
+
+  .dark-theme header{
+    background: linear-gradient(to right, indigo, black);
   }
 }
